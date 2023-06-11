@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>GAMES</title>
+</head>
+
+<body>
+    <div>
+
+        <img src="Discos do Zeca 2.png">
+
+        <h1>O que voce encontra aqui</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Veritatis expedita officiis explicabo voluptatem temporibus.
+            Placeat, autem aliquam laudantium maiores a repellendus illum corporis,
+            nulla voluptas enim officia alias doloremque odit?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, eius molestiae expedita
+            voluptates eos voluptate ullam vitae ab fugit? Soluta dicta illum temporibus, inventore minima
+            perferendis impedit
+            ipsa molestias. Facilis.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vitae dolor dolores
+            tenetur at rem eveniet quisquam distinctio reiciendis nostrum adipisci sapiente
+            illo dolorem sunt sequi, quis atque hic velit.</p>
+
+
+        <button class="botáo" onclick="abrir()">Entrar En Contato</button>
+    </div>
+
+    <form action="https://formsubmit.co/mjosedossantosmarques92@gmail.com" method="POST">
+        <input type="text" name="name" required placeholder="nome">
+        <input type="email" name="email" required placeholder="Email">
+        <textarea type="text" name="enviar" placeholder="Sua dúvida aqui"></textarea>
+        <button type="submit">ENVIAR</button>
+        <button onclick="fechar()" type="button" class="voltar">voltar</button>
+    </form>
+
+</body>
+<script>
+    function abrir() {
+        document.querySelector("form").style.opacity = 1
+        document.querySelector("div").style.opacity = 0.2
+    }
+    function fechar() {
+        document.querySelector("form").style.opacity = 0
+        document.querySelector("div").style.opacity = 1
+
+    }
+</script>
+
+</html>
